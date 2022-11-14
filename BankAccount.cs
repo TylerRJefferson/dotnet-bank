@@ -9,7 +9,8 @@ public class BankAccount
   }
 public void makeDeposit(decimal newDeposit) {
   if (newDeposit < 0) {
-    balance = balance;
+    // balance = balance;
+    throw new Exception("Invalid deposit amount");
   } else {
     balance += newDeposit;
   }
